@@ -69,7 +69,7 @@ const GroceryItemCard = ({ item, onMarkAs, onUpdate }: GroceryItemCardProps) => 
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2">
           <span className="font-medium text-sm truncate">{item.name}</span>
-          <Badge variant="outline" className={`text-[10px] px-1.5 py-0 border ${config.className}`}>
+          <Badge variant="outline" className={`text-[10px] px-1.5 py-0 border flex-shrink-0 ${config.className}`}>
             <StatusIcon className="h-2.5 w-2.5 mr-0.5" />
             {config.label}
           </Badge>
