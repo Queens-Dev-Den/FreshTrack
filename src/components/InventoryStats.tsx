@@ -1,15 +1,16 @@
 import { Package, AlertTriangle, AlertCircle, CheckCircle } from 'lucide-react';
 import { GroceryItem } from '@/hooks/useGroceryItems';
 import { getExpiryStatus } from '@/lib/groceryDefaults';
+import { parseLocalDate } from '@/lib/dateUtils';
 
 interface InventoryStatsProps {
   items: GroceryItem[];
 }
 
 const InventoryStats = ({ items }: InventoryStatsProps) => {
-  const urgent = items.filter(i => getExpiryStatus(new Date(i.expiry_date)) === 'urgent').length;
-  const warning = items.filter(i => getExpiryStatus(new Date(i.expiry_date)) === 'warning').length;
-  const stable = items.filter(i => getExpiryStatus(new Date(i.expiry_date)) === 'stable').length;
+  const urgent = items.filter(i => getExpiryStatus(parseLocalDate(i.expiry_date)) === 'urgent').length;
+  const warning = items.filter(i => getExpiryStatus(parseLocalDate(i.expiry_date)) === 'warning').length;
+  const stable = items.filter(i => getExpiryStatus(parseLocalDate(i.expiry_date)) === 'stable').length;
 
   const stats = [
     { label: 'Total Items', value: items.length, icon: Package, color: 'text-foreground' },

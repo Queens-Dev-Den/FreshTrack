@@ -62,8 +62,8 @@ const GroceryItemCard = ({ item, onMarkAs, onUpdate }: GroceryItemCardProps) => 
   };
 
   return (
-    <div className={`group flex items-center gap-3 p-3 rounded-lg border bg-card hover:shadow-sm transition-all ${status === 'urgent' ? 'border-destructive/30 bg-destructive/[0.02]' :
-      status === 'warning' ? 'border-warning/30 bg-warning/[0.02]' : ''
+    <div className={`group flex items-center gap-3 p-3 rounded-lg border bg-card hover:shadow-sm transition-all ${status === 'urgent' ? 'border-destructive bg-destructive/[0.05]' :
+      status === 'warning' ? 'border-orange-500 bg-orange-500/[0.05]' : ''
       }`}>
       <div className="text-xl flex-shrink-0">{emoji}</div>
 
