@@ -7,6 +7,8 @@ import { AuthProvider } from "@/hooks/useAuth";
 import Index from "./pages/Index";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
+import AddItemPage from "./features/pantry/AddItemPage";
+import ConfirmItemPage from "./features/pantry/ConfirmItemPage";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +22,9 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/auth" element={<Auth />} />
+            {/* New Routes for Scanning Feature */}
+            <Route path="/add" element={<AddItemPage />} />
+            <Route path="/add/confirm" element={<ConfirmItemPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
