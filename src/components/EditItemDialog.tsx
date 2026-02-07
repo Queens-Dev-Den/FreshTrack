@@ -69,7 +69,7 @@ const EditItemDialog = ({ item, onUpdate }: EditItemDialogProps) => {
                                 <SelectTrigger>
                                     <SelectValue />
                                 </SelectTrigger>
-                                <SelectContent>
+                                <SelectContent className="max-h-[200px]">
                                     {CATEGORIES.map((cat) => (
                                         <SelectItem key={cat} value={cat}>{cat}</SelectItem>
                                     ))}

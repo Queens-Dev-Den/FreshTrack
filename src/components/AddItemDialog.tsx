@@ -109,7 +109,7 @@ const AddItemDialog = ({ onAdd }: AddItemDialogProps) => {
               <SelectTrigger>
                 <SelectValue placeholder="Category" />
               </SelectTrigger>
-              <SelectContent>
+              <SelectContent className="max-h-[200px]">
                 {CATEGORIES.map((cat) => (
                   <SelectItem key={cat} value={cat}>{cat}</SelectItem>
                 ))}
@@ -128,7 +128,7 @@ const AddItemDialog = ({ onAdd }: AddItemDialogProps) => {
                 <SelectTrigger className="flex-1">
                   <SelectValue />
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent className="max-h-[200px]">
                   {UNITS.map((u) => (
                     <SelectItem key={u} value={u}>{u}</SelectItem>
                   ))}
