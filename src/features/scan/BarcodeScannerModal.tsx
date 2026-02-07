@@ -33,7 +33,7 @@ export const BarcodeScannerModal = ({ onDetected, open, onOpenChange }: BarcodeS
 
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
-            <DialogContent className="sm:max-w-md p-0 overflow-hidden bg-black text-white border-zinc-800">
+            <DialogContent className="sm:max-w-md p-0 overflow-hidden bg-black text-white border-zinc-800 [&>button]:hidden">
                 <div className="relative h-[24rem] flex flex-col items-center justify-center bg-zinc-900">
 
                     {/* Close button overlay */}
@@ -83,7 +83,7 @@ export const BarcodeScannerModal = ({ onDetected, open, onOpenChange }: BarcodeS
                 </div>
 
                 {/* Manual Entry Fallback Section */}
-                <div className="bg-background p-4 text-foreground">
+                <div className="bg-background p-4 text-foreground relative z-20 shadow-md">
                     <form onSubmit={handleManualSubmit} className="flex gap-2">
                         <Input
                             type="text"

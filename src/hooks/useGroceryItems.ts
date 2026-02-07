@@ -69,6 +69,20 @@ export function useGroceryItems() {
     }
   };
 
+  const updateItem = async (id: string, updates: Partial<Omit<GroceryItem, 'id' | 'user_id' | 'created_at' | 'updated_at'>>) => {
+    const { error } = await supabase
+      .from('grocery_items')
+      .update(updates)
+      .eq('id', id);
+
+    if (error) {
+      toast({ title: 'Error updating item', description: error.message, variant: 'destructive' });
+    } else {
+      toast({ title: 'Item updated' });
+      fetchItems();
+    }
+  };
+
   const markAs = async (id: string, status: 'consumed' | 'discarded') => {
     const { error } = await supabase
       .from('grocery_items')
@@ -86,5 +100,5 @@ export function useGroceryItems() {
     }
   };
 
-  return { items, loading, addItem, markAs, refetch: fetchItems };
+  return { items, loading, addItem, updateItem, markAs, refetch: fetchItems };
 }

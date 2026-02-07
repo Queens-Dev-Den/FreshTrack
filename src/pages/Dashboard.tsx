@@ -11,13 +11,36 @@ import GroceryItemCard from '@/components/GroceryItemCard';
 import InventoryStats from '@/components/InventoryStats';
 import CategoryFilter from '@/components/CategoryFilter';
 import { Loader2 } from 'lucide-react';
+import { BarcodeScannerModal } from '@/features/scan/BarcodeScannerModal';
+import { lookupProduct } from '@/services/productApi';
+import { toast } from 'sonner';
 
 const Dashboard = () => {
   const navigate = useNavigate();
   const { signOut, user } = useAuth();
-  const { items, loading, addItem, markAs } = useGroceryItems();
+  const { items, loading, addItem, updateItem, markAs } = useGroceryItems();
   const [search, setSearch] = useState('');
   const [categoryFilter, setCategoryFilter] = useState<string | null>(null);
+  const [isScannerOpen, setIsScannerOpen] = useState(false);
+
+  const handleBarcodeDetected = async (barcode: string) => {
+    const toastId = toast.loading('Looking up product...');
+    try {
+      const product = await lookupProduct(barcode);
+      toast.dismiss(toastId);
+      navigate('/add/confirm', {
+        state: {
+          barcode,
+          product
+        }
+      });
+    } catch (error) {
+      console.error('Lookup failed', error);
+      toast.dismiss(toastId);
+      // Navigate even if lookup fails, user will fill in details
+      navigate('/add/confirm', { state: { barcode } });
+    }
+  };
 
   const categoryItemCounts = useMemo(() => {
     const counts: Record<string, number> = {};
@@ -45,7 +68,7 @@ const Dashboard = () => {
             <h1 className="font-semibold text-lg">FreshTrack</h1>
           </div>
           <div className="flex items-center gap-2">
-            <Button size="icon" variant="ghost" onClick={() => navigate('/add')} title="Scan Item">
+            <Button size="icon" variant="ghost" onClick={() => setIsScannerOpen(true)} title="Scan Item">
               <Scan className="h-5 w-5" />
             </Button>
             <AddItemDialog onAdd={addItem} />
@@ -96,11 +119,17 @@ const Dashboard = () => {
         ) : (
           <div className="space-y-2">
             {filteredItems.map((item) => (
-              <GroceryItemCard key={item.id} item={item} onMarkAs={markAs} />
+              <GroceryItemCard key={item.id} item={item} onMarkAs={markAs} onUpdate={updateItem} />
             ))}
           </div>
         )}
       </main>
+
+      <BarcodeScannerModal
+        open={isScannerOpen}
+        onOpenChange={setIsScannerOpen}
+        onDetected={handleBarcodeDetected}
+      />
     </div>
   );
 };
