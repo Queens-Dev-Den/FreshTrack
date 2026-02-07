@@ -8,7 +8,7 @@ const BottomNav = () => {
     const isActive = (path: string) => location.pathname === path;
 
     return (
-        <div className="fixed bottom-0 left-0 right-0 border-t bg-background/95 backdrop-blur z-50">
+        <div className="fixed bottom-0 left-0 right-0 border-t bg-background z-50">
             <div className="max-w-3xl mx-auto flex">
                 <button
                     onClick={() => navigate('/')}
