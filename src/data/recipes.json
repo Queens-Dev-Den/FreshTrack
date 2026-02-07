@@ -1,0 +1,518 @@
+[
+    {
+        "id": "1",
+        "name": "Spaghetti Bolognese",
+        "ingredients": [
+            "Spaghetti",
+            "Ground Beef",
+            "Tomato Sauce",
+            "Onion",
+            "Garlic",
+            "Olive Oil"
+        ],
+        "cookTime": 45
+    },
+    {
+        "id": "2",
+        "name": "Chicken Stir Fry",
+        "ingredients": [
+            "Chicken",
+            "Broccoli",
+            "Rice",
+            "Soy Sauce",
+            "Carrot",
+            "Bell Pepper",
+            "Garlic"
+        ],
+        "cookTime": 30
+    },
+    {
+        "id": "3",
+        "name": "Classic Omelet",
+        "ingredients": [
+            "Eggs",
+            "Cheese",
+            "Milk",
+            "Butter",
+            "Salt",
+            "Pepper"
+        ],
+        "cookTime": 10
+    },
+    {
+        "id": "4",
+        "name": "Grilled Cheese",
+        "ingredients": [
+            "Bread",
+            "Cheese",
+            "Butter"
+        ],
+        "cookTime": 15
+    },
+    {
+        "id": "5",
+        "name": "Caesar Salad",
+        "ingredients": [
+            "Romaine Lettuce",
+            "Croutons",
+            "Parmesan Cheese",
+            "Caesar Dressing",
+            "Chicken"
+        ],
+        "cookTime": 20
+    },
+    {
+        "id": "6",
+        "name": "Beef Tacos",
+        "ingredients": [
+            "Ground Beef",
+            "Taco Shells",
+            "Lettuce",
+            "Cheese",
+            "Tomato",
+            "Salsa",
+            "Sour Cream"
+        ],
+        "cookTime": 25
+    },
+    {
+        "id": "7",
+        "name": "Pancakes",
+        "ingredients": [
+            "Flour",
+            "Milk",
+            "Eggs",
+            "Sugar",
+            "Baking Powder",
+            "Butter",
+            "Maple Syrup"
+        ],
+        "cookTime": 20
+    },
+    {
+        "id": "8",
+        "name": "Vegetable Soup",
+        "ingredients": [
+            "Carrot",
+            "Celery",
+            "Onion",
+            "Potato",
+            "Tomato",
+            "Vegetable Broth",
+            "Beans"
+        ],
+        "cookTime": 60
+    },
+    {
+        "id": "9",
+        "name": "Chicken Alfredo",
+        "ingredients": [
+            "Fettuccine",
+            "Chicken",
+            "Heavy Cream",
+            "Parmesan Cheese",
+            "Garlic",
+            "Butter"
+        ],
+        "cookTime": 40
+    },
+    {
+        "id": "10",
+        "name": "Avocado Toast",
+        "ingredients": [
+            "Bread",
+            "Avocado",
+            "Lemon",
+            "Salt",
+            "Red Pepper Flakes",
+            "Olive Oil"
+        ],
+        "cookTime": 10
+    },
+    {
+        "id": "11",
+        "name": "Mac and Cheese",
+        "ingredients": [
+            "Macaroni",
+            "Cheese",
+            "Milk",
+            "Butter",
+            "Flour"
+        ],
+        "cookTime": 30
+    },
+    {
+        "id": "12",
+        "name": "Hamburger",
+        "ingredients": [
+            "Ground Beef",
+            "Burger Buns",
+            "Lettuce",
+            "Tomato",
+            "Cheese",
+            "Ketchup",
+            "Mustard"
+        ],
+        "cookTime": 20
+    },
+    {
+        "id": "13",
+        "name": "Tuna Salad Sandwich",
+        "ingredients": [
+            "Tuna",
+            "Mayonnaise",
+            "Celery",
+            "Onion",
+            "Bread",
+            "Lettuce"
+        ],
+        "cookTime": 10
+    },
+    {
+        "id": "14",
+        "name": "French Toast",
+        "ingredients": [
+            "Bread",
+            "Eggs",
+            "Milk",
+            "Cinnamon",
+            "Vanilla Extract",
+            "Butter",
+            "Syrup"
+        ],
+        "cookTime": 20
+    },
+    {
+        "id": "15",
+        "name": "Quesadilla",
+        "ingredients": [
+            "Tortilla",
+            "Cheese",
+            "Chicken",
+            "Salsa",
+            "Sour Cream"
+        ],
+        "cookTime": 15
+    },
+    {
+        "id": "16",
+        "name": "Fried Rice",
+        "ingredients": [
+            "Rice",
+            "Eggs",
+            "Peas",
+            "Carrots",
+            "Soy Sauce",
+            "Green Onion",
+            "Oil"
+        ],
+        "cookTime": 25
+    },
+    {
+        "id": "17",
+        "name": "Mashed Potatoes",
+        "ingredients": [
+            "Potatoes",
+            "Butter",
+            "Milk",
+            "Salt",
+            "Pepper"
+        ],
+        "cookTime": 40
+    },
+    {
+        "id": "18",
+        "name": "Greek Salad",
+        "ingredients": [
+            "Cucumber",
+            "Tomato",
+            "Red Onion",
+            "Feta Cheese",
+            "Olives",
+            "Olive Oil",
+            "Oregano"
+        ],
+        "cookTime": 15
+    },
+    {
+        "id": "19",
+        "name": "BLT Sandwich",
+        "ingredients": [
+            "Bacon",
+            "Lettuce",
+            "Tomato",
+            "Bread",
+            "Mayonnaise"
+        ],
+        "cookTime": 15
+    },
+    {
+        "id": "20",
+        "name": "Caprese Salad",
+        "ingredients": [
+            "Tomato",
+            "Mozzarella",
+            "Basil",
+            "Olive Oil",
+            "Balsamic Glaze"
+        ],
+        "cookTime": 10
+    },
+    {
+        "id": "21",
+        "name": "Smoothie Bowl",
+        "ingredients": [
+            "Banana",
+            "Berries",
+            "Yogurt",
+            "Granola",
+            "Honey"
+        ],
+        "cookTime": 10
+    },
+    {
+        "id": "22",
+        "name": "Scrambled Eggs",
+        "ingredients": [
+            "Eggs",
+            "Milk",
+            "Butter",
+            "Salt",
+            "Pepper",
+            "Chives"
+        ],
+        "cookTime": 10
+    },
+    {
+        "id": "23",
+        "name": "Roasted Chicken",
+        "ingredients": [
+            "Whole Chicken",
+            "Lemon",
+            "Garlic",
+            "Rosemary",
+            "Thyme",
+            "Butter"
+        ],
+        "cookTime": 90
+    },
+    {
+        "id": "24",
+        "name": "Guacamole",
+        "ingredients": [
+            "Avocado",
+            "Lime",
+            "Cilantro",
+            "Onion",
+            "Tomato",
+            "Salt"
+        ],
+        "cookTime": 15
+    },
+    {
+        "id": "25",
+        "name": "Tomato Soup",
+        "ingredients": [
+            "Tomatoes",
+            "Onion",
+            "Garlic",
+            "Vegetable Broth",
+            "Basil",
+            "Cream"
+        ],
+        "cookTime": 40
+    },
+    {
+        "id": "26",
+        "name": "Egg Salad",
+        "ingredients": [
+            "Eggs",
+            "Mayonnaise",
+            "Mustard",
+            "Paprika",
+            "Chives",
+            "Bread"
+        ],
+        "cookTime": 20
+    },
+    {
+        "id": "27",
+        "name": "Burrito Bowl",
+        "ingredients": [
+            "Rice",
+            "Beans",
+            "Chicken",
+            "Salsa",
+            "Cheese",
+            "Guacamole",
+            "Corn"
+        ],
+        "cookTime": 25
+    },
+    {
+        "id": "28",
+        "name": "Pesto Pasta",
+        "ingredients": [
+            "Pasta",
+            "Basil",
+            "Pine Nuts",
+            "Parmesan Cheese",
+            "Garlic",
+            "Olive Oil"
+        ],
+        "cookTime": 20
+    },
+    {
+        "id": "29",
+        "name": "Chicken Noodle Soup",
+        "ingredients": [
+            "Chicken",
+            "Noodles",
+            "Carrots",
+            "Celery",
+            "Onion",
+            "Broth"
+        ],
+        "cookTime": 60
+    },
+    {
+        "id": "30",
+        "name": "Fish Tacos",
+        "ingredients": [
+            "Fish",
+            "Corn Tortillas",
+            "Cabbage",
+            "Lime",
+            "Cilantro",
+            "Sour Cream"
+        ],
+        "cookTime": 30
+    },
+    {
+        "id": "31",
+        "name": "Chili",
+        "ingredients": [
+            "Ground Beef",
+            "Beans",
+            "Tomato Sauce",
+            "Onion",
+            "Chili Powder",
+            "Cumin"
+        ],
+        "cookTime": 60
+    },
+    {
+        "id": "32",
+        "name": "Pizza",
+        "ingredients": [
+            "Pizza Dough",
+            "Tomato Sauce",
+            "Cheese",
+            "Pepperoni",
+            "Mushrooms"
+        ],
+        "cookTime": 40
+    },
+    {
+        "id": "33",
+        "name": "Garlic Bread",
+        "ingredients": [
+            "Bread",
+            "Butter",
+            "Garlic",
+            "Parsley",
+            "Cheese"
+        ],
+        "cookTime": 15
+    },
+    {
+        "id": "34",
+        "name": "Deviled Eggs",
+        "ingredients": [
+            "Eggs",
+            "Mayonnaise",
+            "Mustard",
+            "Paprika",
+            "Vinegar"
+        ],
+        "cookTime": 30
+    },
+    {
+        "id": "35",
+        "name": "Apple Pie",
+        "ingredients": [
+            "Apples",
+            "Flour",
+            "Butter",
+            "Sugar",
+            "Cinnamon",
+            "Nutmeg"
+        ],
+        "cookTime": 90
+    },
+    {
+        "id": "36",
+        "name": "Potato Salad",
+        "ingredients": [
+            "Potatoes",
+            "Eggs",
+            "Mayonnaise",
+            "Mustard",
+            "Celery",
+            "Onion"
+        ],
+        "cookTime": 40
+    },
+    {
+        "id": "37",
+        "name": "Steak",
+        "ingredients": [
+            "Steak",
+            "Salt",
+            "Pepper",
+            "Butter",
+            "Garlic",
+            "Rosemary"
+        ],
+        "cookTime": 20
+    },
+    {
+        "id": "38",
+        "name": "Salmon",
+        "ingredients": [
+            "Salmon",
+            "Lemon",
+            "Dill",
+            "Olive Oil",
+            "Salt",
+            "Pepper"
+        ],
+        "cookTime": 20
+    },
+    {
+        "id": "39",
+        "name": "Rice Pudding",
+        "ingredients": [
+            "Rice",
+            "Milk",
+            "Sugar",
+            "Cinnamon",
+            "Vanilla",
+            "Raisins"
+        ],
+        "cookTime": 45
+    },
+    {
+        "id": "40",
+        "name": "Bruschetta",
+        "ingredients": [
+            "Bread",
+            "Tomato",
+            "Basil",
+            "Garlic",
+            "Olive Oil",
+            "Balsamic Vinegar"
+        ],
+        "cookTime": 20
+    }
+]

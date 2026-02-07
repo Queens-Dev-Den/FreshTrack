@@ -9,6 +9,8 @@ import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 import AddItemPage from "./features/pantry/AddItemPage";
 import ConfirmItemPage from "./features/pantry/ConfirmItemPage";
+import RecipesPage from "./pages/RecipesPage";
+import BottomNav from "./components/BottomNav";
 
 const queryClient = new QueryClient();
 
@@ -20,7 +22,8 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Index />} />
+            <Route path="/" element={<><Index /><BottomNav /></>} />
+            <Route path="/recipes" element={<><RecipesPage /><BottomNav /></>} />
             <Route path="/auth" element={<Auth />} />
             {/* New Routes for Scanning Feature */}
             <Route path="/add" element={<AddItemPage />} />
