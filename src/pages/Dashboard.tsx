@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
-import { LogOut, Search } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { LogOut, Search, Scan } from 'lucide-react';
 import { FridgeIcon } from '@/components/CustomIcons';
 import { useAuth } from '@/hooks/useAuth';
 import { useGroceryItems } from '@/hooks/useGroceryItems';
@@ -12,6 +13,7 @@ import CategoryFilter from '@/components/CategoryFilter';
 import { Loader2 } from 'lucide-react';
 
 const Dashboard = () => {
+  const navigate = useNavigate();
   const { signOut, user } = useAuth();
   const { items, loading, addItem, markAs } = useGroceryItems();
   const [search, setSearch] = useState('');
@@ -43,6 +45,9 @@ const Dashboard = () => {
             <h1 className="font-semibold text-lg">FreshTrack</h1>
           </div>
           <div className="flex items-center gap-2">
+            <Button size="icon" variant="ghost" onClick={() => navigate('/add')} title="Scan Item">
+              <Scan className="h-5 w-5" />
+            </Button>
             <AddItemDialog onAdd={addItem} />
             <Button size="icon" variant="ghost" onClick={signOut} title="Sign out" className="h-8 w-8">
               <LogOut className="h-4 w-4" />
