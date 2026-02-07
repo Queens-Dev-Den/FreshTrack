@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
-import { LogOut, Refrigerator, Search } from 'lucide-react';
+import { LogOut, Search } from 'lucide-react';
+import { FridgeIcon } from '@/components/CustomIcons';
 import { useAuth } from '@/hooks/useAuth';
 import { useGroceryItems } from '@/hooks/useGroceryItems';
 import { Button } from '@/components/ui/button';
@@ -38,7 +39,7 @@ const Dashboard = () => {
       <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-10">
         <div className="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Refrigerator className="h-5 w-5 text-primary" />
+            <FridgeIcon className="h-5 w-5 text-primary" />
             <h1 className="font-semibold text-lg">FreshTrack</h1>
           </div>
           <div className="flex items-center gap-2">
@@ -79,7 +80,7 @@ const Dashboard = () => {
           </div>
         ) : filteredItems.length === 0 ? (
           <div className="text-center py-16">
-            <Refrigerator className="h-12 w-12 mx-auto text-muted-foreground/40 mb-3" />
+            <FridgeIcon className="h-12 w-12 mx-auto text-muted-foreground/40 mb-3" />
             <p className="text-muted-foreground font-medium">
               {items.length === 0 ? 'Your inventory is empty' : 'No items match your filters'}
             </p>

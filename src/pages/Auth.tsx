@@ -4,7 +4,8 @@ import { useAuth } from '@/hooks/useAuth';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Apple, Loader2 } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
+import { FridgeIcon } from '@/components/CustomIcons';
 import { z } from 'zod';
 
 const authSchema = z.object({
@@ -68,7 +69,7 @@ const Auth = () => {
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary text-primary-foreground mb-4">
-            <Apple className="h-6 w-6" />
+            <FridgeIcon className="h-6 w-6" />
           </div>
           <h1 className="text-2xl font-bold tracking-tight">FreshTrack</h1>
           <p className="text-sm text-muted-foreground mt-1">Smart grocery inventory management</p>
