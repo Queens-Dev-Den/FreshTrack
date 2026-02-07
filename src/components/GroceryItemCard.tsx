@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { GroceryItem } from '@/hooks/useGroceryItems';
 import { getExpiryStatus, getDaysRemaining } from '@/lib/groceryDefaults';
 import EditItemDialog from '@/components/EditItemDialog';
+import { parseLocalDate } from '@/lib/dateUtils';
 
 interface GroceryItemCardProps {
   item: GroceryItem;
@@ -27,8 +28,8 @@ const categoryEmoji: Record<string, string> = {
 };
 
 const GroceryItemCard = ({ item, onMarkAs, onUpdate }: GroceryItemCardProps) => {
-  const status = getExpiryStatus(new Date(item.expiry_date));
-  const daysLeft = getDaysRemaining(new Date(item.expiry_date));
+  const status = getExpiryStatus(parseLocalDate(item.expiry_date));
+  const daysLeft = getDaysRemaining(parseLocalDate(item.expiry_date));
 
   const statusConfig = {
     urgent: {
@@ -82,7 +83,7 @@ const GroceryItemCard = ({ item, onMarkAs, onUpdate }: GroceryItemCardProps) => 
           </span>
           <span className="text-xs text-muted-foreground">·</span>
           <span className="text-xs text-muted-foreground mr-auto">
-            Exp {format(new Date(item.expiry_date), 'MMM d')}
+            Exp {format(parseLocalDate(item.expiry_date), 'MMM d')}
           </span>
         </div>
       </div>

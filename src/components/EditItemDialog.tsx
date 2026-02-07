@@ -10,6 +10,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { cn } from '@/lib/utils';
 import { CATEGORIES, UNITS } from '@/lib/groceryDefaults';
 import { GroceryItem } from '@/hooks/useGroceryItems';
+import { parseLocalDate } from '@/lib/dateUtils';
 
 interface EditItemDialogProps {
     item: GroceryItem;
@@ -22,7 +23,7 @@ const EditItemDialog = ({ item, onUpdate }: EditItemDialogProps) => {
     const [category, setCategory] = useState(item.category);
     const [quantity, setQuantity] = useState(item.quantity);
     const [unit, setUnit] = useState(item.unit);
-    const [expiryDate, setExpiryDate] = useState<Date | undefined>(item.expiry_date ? new Date(item.expiry_date) : undefined);
+    const [expiryDate, setExpiryDate] = useState<Date | undefined>(item.expiry_date ? parseLocalDate(item.expiry_date) : undefined);
     const [notes, setNotes] = useState(item.notes || '');
     const [loading, setLoading] = useState(false);
 
