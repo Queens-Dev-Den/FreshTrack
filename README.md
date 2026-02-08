@@ -1,73 +1,43 @@
-# Welcome to your Lovable project
+# FreshTrack: Limit Food Wastage and Track Your Pantry
 
-## Project info
+## Project Purpose
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+FreshTrack is designed to help individuals and families reduce food wastage and manage their food inventory effectively. With FreshTrack, you can easily track the food in your fridge and pantry, ensuring that nothing goes to waste. By providing recommendations on recipes based on the expiry dates of your food items, FreshTrack encourages mindful consumption and helps you make the most of your groceries.
 
-## How can I edit this code?
+## Key Features
 
-There are several ways of editing your application.
+- **Food Inventory Management**: Keep track of the food items in your fridge and pantry.
+- **Recipe Recommendations**: Get personalized recipe suggestions based on the ingredients you have and their expiry dates.
+- **Reduce Food Wastage**: Avoid letting food go to waste by using it before it expires.
 
-**Use Lovable**
+## How to Get Started
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+1. Clone this repository to your local machine.
+2. Install the required dependencies using `npm install`.
+3. Start the development server with `npm run dev`.
+4. Open your browser and navigate to the provided local development URL.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Technologies Used
 
-**Use your preferred IDE**
+FreshTrack is built using modern web development technologies:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Vite**: A fast build tool and development server.
+- **TypeScript**: For type-safe JavaScript development.
+- **React**: A popular library for building user interfaces.
+- **shadcn-ui**: A collection of accessible and customizable UI components.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Deployment
 
-Follow these steps:
+To deploy this project, you can use platforms like Vercel or Netlify. Follow these steps for deployment:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. Build the project using `npm run build`.
+2. Deploy the contents of the `dist` folder to your hosting platform.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Contributing
 
-# Step 3: Install the necessary dependencies.
-npm i
+We welcome contributions! Feel free to fork this repository, make your changes, and submit a pull request. Together, we can make FreshTrack even better.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## License
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is licensed under the MIT License. See the LICENSE file for details.
